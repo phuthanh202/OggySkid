@@ -62,8 +62,8 @@ module.exports = {
                     '> `/help`: Hiện menu này.\n' +
                     '\n' +
                     'Các link liên quan của Oggy:\n' +
-                    `'[Invite Oggy](https://discord.com/oauth2/authorize?client_id=${client1}&permissions=${permissions}&scope=${scope})` + ' | ' +
-                    `'[Invite Oggy 2](https://discord.com/oauth2/authorize?client_id=${client2}&permissions=${permissions}&scope=${scope})\n`
+                    `'[Invite1](https://discord.gg/htJ2kRSfPz)` + ' | ' +
+                    `'[Invite2](https://discord.gg/htJ2kRSfPz)\n`
                 )
             let msg = await message.reply({
                 embeds: [
