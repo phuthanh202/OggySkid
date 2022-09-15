@@ -33,10 +33,10 @@ module.exports = {
             .setColor(embedColor), false
         )
         if (msg.toString().trim().toLowerCase() == 'dùng lệnh/2y2c để vào server.') {
-            await wait(900)
+            await wait(2000)
             bot.chat('/2y2c');
             chat.chat(bot.client1, bot.client2, new MessageEmbed()
-                .setDescription('Đã nhập `/2y2c`')
+                .setDescription('Đã nhập`/2y2c`')
                 .setColor(chat.colors.green), true)
         }
         if (!bot.client1.channels.cache.get(process.env.DM_CHANNEL)) return
