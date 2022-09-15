@@ -33,7 +33,7 @@ module.exports = {
             .setColor(embedColor), false
         )
         if (msg.toString().trim().toLowerCase() == 'dùng lệnh/2y2c để vào server.') {
-            await wait(1000)
+            await wait(900)
             bot.chat('/2y2c');
             chat.chat(bot.client1, bot.client2, new MessageEmbed()
                 .setDescription('Đã nhập `/2y2c`')
@@ -42,8 +42,8 @@ module.exports = {
         if (!bot.client1.channels.cache.get(process.env.DM_CHANNEL)) return
         let test = false;
         [
-            'dùng lệnh/anarchyvn  để vào server.',
-            'đang vào anarchyvn...',
+            'dùng lệnh/2y2c để vào server.',
+            'đang vào 2y2c...',
             /^UltimateAutoRestart » Restarting in (.+)!$/,
             /^UltimateAutoRestart » Restarting... join back soon!$/,
             /^nhắn cho (.+)$/,
