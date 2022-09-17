@@ -32,19 +32,17 @@ module.exports = {
             .setDescription(msg.toString())
             .setColor(embedColor), false
         )
-        if (msg.toString().trim().toLowerCase() == 'dùng lệnh/2y2c để vào server.') {
-            await wait(60)
-            bot.chat('/2y2c');
-            bot.chat('/2y2c');
+        if (msg.toString().trim().toLowerCase() == 'dùng lệnh /2y2c để vào server:D') {
+            await wait(100)
             bot.chat('/2y2c');
             chat.chat(bot.client1, bot.client2, new MessageEmbed()
-                .setDescription('Đã nhập `/2y2c`')
+                .setDescription('Đã nhập`/2y2c`')
                 .setColor(chat.colors.green), true)
         }
         if (!bot.client1.channels.cache.get(process.env.DM_CHANNEL)) return
         let test = false;
         [
-            'dùng lệnh/2y2c để vào server.',
+            'dùng lệnh /2y2c để vào server:D',
             'đang vào 2y2c...',
             /^UltimateAutoRestart » Restarting in (.+)!$/,
             /^UltimateAutoRestart » Restarting... join back soon!$/,
@@ -53,7 +51,7 @@ module.exports = {
             /^<(.+)> (.+)$/,
             'CommandWhitelist > No such command.',
             /^(.+) has made the advancement (.+)$/,
-            /^Nếu bạn yêu thích server anarchyvn.net thì đừng quên vote tại đây (.+)$/,
+            /^Nếu bạn yêu thích server 2y2c.org thì đừng quên vote tại đây (.+)$/,
             'Please log-in in order to use the chat or any commands!',
             /^(.+) joined the game$/,
             /^CS: (.+)$/,
