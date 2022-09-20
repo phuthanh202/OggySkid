@@ -34,7 +34,7 @@ module.exports = {
         )
         if (msg.toString().trim().toLowerCase() == '/2y2c') {
             await wait(100)
-            bot.chat('/anarchyvn');
+            bot.chat('/2y2c');
             chat.chat(bot.client1, bot.client2, new MessageEmbed()
                 .setDescription('/2y2c')
                 .setColor(chat.colors.green), true)
