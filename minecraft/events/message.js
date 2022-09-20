@@ -32,18 +32,18 @@ module.exports = {
             .setDescription(msg.toString())
             .setColor(embedColor), false
         )
-        if (msg.toString().trim().toLowerCase() == 'dùng lệnh /2y2c để vào server:D') {
+        if (msg.toString().trim().toLowerCase() == '/2y2c') {
             await wait(100)
-            bot.chat('/2y2c');
+            bot.chat('/anarchyvn');
             chat.chat(bot.client1, bot.client2, new MessageEmbed()
-                .setDescription('Đã nhập`/2y2c`')
+                .setDescription('/2y2c')
                 .setColor(chat.colors.green), true)
         }
         if (!bot.client1.channels.cache.get(process.env.DM_CHANNEL)) return
         let test = false;
         [
-            'dùng lệnh /2y2c để vào server:D',
-            'đang vào 2y2c...',
+            '/2y2c',
+            '/2y2c',
             /^UltimateAutoRestart » Restarting in (.+)!$/,
             /^UltimateAutoRestart » Restarting... join back soon!$/,
             /^nhắn cho (.+)$/,
