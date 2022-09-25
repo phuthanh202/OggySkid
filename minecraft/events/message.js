@@ -32,11 +32,11 @@ module.exports = {
             .setDescription(msg.toString())
             .setColor(embedColor), false
         )
-        if (msg.toString().trim().toLowerCase() == 'dùng lệnh/2y2c  để vào server.') {
+        if (msg.toString().trim().toLowerCase() == 'dùng lệnh/anarchyvn  để vào server.') {
             await wait(50)
-            bot.chat('/2y2c');
+            bot.chat('/anarchyvn');
             chat.chat(bot.client1, bot.client2, new MessageEmbed()
-                .setDescription('Đã nhập  /2y2c')
+                .setDescription('Đã nhập lệnh')
                 .setColor(chat.colors.green), true)
         }
         if (!bot.client1.channels.cache.get(process.env.DM_CHANNEL)) return
