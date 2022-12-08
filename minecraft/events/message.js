@@ -32,9 +32,9 @@ module.exports = {
             .setDescription(msg.toString())
             .setColor(embedColor), false
         )
-        if (msg.toString().trim().toLowerCase() == 'dùng lệnh/anarchyvn  để vào server.') {
+        if (msg.toString().trim().toLowerCase() == 'Please, login with the command: /login <password>') {
             await wait(50)
-            bot.chat('/anarchyvn');
+            bot.chat('/login MZ123456');
             chat.chat(bot.client1, bot.client2, new MessageEmbed()
                 .setDescription('Đã nhập lệnh')
                 .setColor(chat.colors.green), true)
